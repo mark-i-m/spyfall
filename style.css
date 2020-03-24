@@ -1,0 +1,42 @@
+body {
+    color: white;
+    background: black;
+    font-family: monospace;
+    font-size: large;
+}
+
+input, button {
+    background: #ddd;
+    color: black;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    font-family: monospace;
+    font-size: large;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    display: block;
+    width: 75%;
+    margin: 5px auto;
+}
+
+label {
+    display: inline-block;
+    padding: 5px;
+}
+
+#form-new, #form-join {
+    float: left;
+    width: 250px;
+    margin: 5px;
+    text-align: right;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Poor Man's Spyfall</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="forms">
+            <div id="form-new">
+                <label>Number of players</label><input id="n-players" type="number" value=3 min=3 max=26 /> <br />
+                <button onclick="newGame();">New game</button>
+            </div>
+            <div id="form-join">
+                <label>Game ID </label><input id="game-id-text" type="text" /> <br />
+                <label>Player # </label><input id="player-num" type="text" /> <br />
+                <button onclick="joinGame();">Join game</button>
+            </div>
+        </div>
+
+        <div id="ready" style="display: none;">
+            Your Game ID is: <span id="game-id-display"></span>
+            <button onclick="startGame()">Start</button>
+        </div>
+
+        <div id="game" style="display: none;">
+            <div id="spy">You are the SPY!</div>
+            <div id="location">You are not the spy. Location:
+                <span id="location-text"></span></div>
+
+            <p>
+                Possible locations: <div id="location-list"></div>
+            </p>
+        </div>
+    </body>
+
+    <script src="spyfall.js"></script>
+</html>
