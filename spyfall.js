@@ -26,7 +26,7 @@ const locations = [
     "Train station", "Grocery Store", "Circus", "Movie theatre", "Casino",
     "Bank", "Embassy", "Submarine", "Pirate ship", "The International Space Station",
     "Airport", "McMurdo Station, Antarctica"
-];
+].sort();
 
 // Some utilities.
 
