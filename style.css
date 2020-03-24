@@ -40,3 +40,7 @@ label {
 li {
     list-style: none;
 }
+
+a {
+    color: #0080ff;
+}

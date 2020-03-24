@@ -13,6 +13,7 @@ const spyText = document.getElementById("spy");
 const locationBox = document.getElementById("location");
 const locationText = document.getElementById("location-text");
 const locationsList = document.getElementById("location-list");
+const shareLink = document.getElementById("share-link");
 
 // Some game variables.
 
@@ -104,6 +105,7 @@ function newGame() {
     gameId = genGameId(numberOfPlayers);
 
     gameIdDisplay.textContent = gameId;
+    shareLink.href = "https://mark-i-m.github.io/spyfall/?game=" + gameId;
 
     hide(forms);
     show(ready);
@@ -143,4 +145,16 @@ function startGame() {
 
     hide(ready);
     show(game);
+}
+
+function loaded() {
+    // Check if there is a gameId in the query string.
+
+    const urlParams = new URLSearchParams(window.location.search);
+    gameId = urlParams.get("game");
+
+    if (gameId !== null) {
+        gameIdText.value = gameId;
+        gameIdText.disabled = true;
+    }
 }
