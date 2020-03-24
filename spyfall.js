@@ -20,9 +20,12 @@ const shareLink = document.getElementById("share-link");
 let gameId = 0;
 
 const locations = [
-    "Beach", "Bank", "Airplane", "House", "Church", "Cruise Ship", "Army Fort",
+    "Beach", "Bank", "Airplane", "House", "Church", "Cruise Ship", "Military Base",
     "Hospital", "Restaurant", "Salon", "Barber shop", "Dungeon", "Classroom",
-    "Desert Island", "Meadow", "Farm", "Highway", "Office"
+    "Desert Island", "Meadow", "Farm", "Highway", "Office", "Subway tunnel",
+    "Train station", "Grocery Store", "Circus", "Movie theatre", "Casino",
+    "Bank", "Embassy", "Submarine", "Pirate ship", "The International Space Station",
+    "Airport", "McMurdo Station, Antarctica"
 ];
 
 // Some utilities.
